@@ -77,15 +77,15 @@ GREETING = re.compile(
 WEIGHTS = {
     "domain_age": 7,
     "typosquatting": 13,
-    "urgency_cred": 11,
+    "urgency_cred": 13,
     "url_ip": 7,
     "bec": 11,
     "reply_mismatch": 15,
     "attachments": 6,
-    "display_spoof": 13,
+    "display_spoof": 12,
     "generic_greeting": 6,
-    "link_mismatch": 11,
-}
+    "link_mismatch": 10
+    }
 WEIGHT_TOTAL = sum(WEIGHTS.values()) 
 DEFAULT_THRESHOLDS = {
     "suspicious": 10, 
