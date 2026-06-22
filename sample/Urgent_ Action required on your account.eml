@@ -1,0 +1,136 @@
+Delivered-To: bayoleems@gmail.com
+Received: by 2002:a05:7412:2401:b0:1dd:1622:1b73 with SMTP id y1csp2382930rda;
+        Mon, 22 Jun 2026 06:11:26 -0700 (PDT)
+X-Received: by 2002:a05:620a:43aa:b0:914:9ecb:9adb with SMTP id af79cd13be357-92092a3d365mr1977129785a.50.1782133886213;
+        Mon, 22 Jun 2026 06:11:26 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1782133886; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=rgQhUHe0/nIhz6xbIiyWkKuVqNEoov6M/JxJlc/hZzc2wYLYVmQacTHH0PnizHvuxy
+         LYtA4GdB30+AY4sPQvGFCpzMcfxYv+lgTGA8QFGIMp1whrcMPpzwzMij8vTHBR16Krno
+         uCrwgbcEycIARmG8cgiOu/etQbcBzxJLCDef1Q7ZSnDdYTuECdjuBVeUiUYZVczkzNJA
+         EfkKYT/XgWNDqoF9e9rKc9Oz4d+h3KvFpXLXHVKW7SAevcNlJs6fEu8mT6556erRDvZO
+         RaqNQ8GMynSccp/NSIe5a7SMzyunxC5rUoDUhlmV5B6lIMV18IQaf0n18KZGYciHzW87
+         6FIQ==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=T9gFv4K9smc57weusPF1DWkWA3jOzvkMNbQX0bdKvuE=;
+        fh=mPxirkRRNwdXsc7NhQrNr1Pw99tTZlYStJq8gXEnKyA=;
+        b=q+fq7RLiXZhc3F2Wlx2AMzzFyCCinlOinVE5XGiap1UYVsTiG2xFQLHnN0WSZZ9K2v
+         2srqlGDJhU1wQOoOz17QtmOv3SeQA+TjdxIkDA3TCebuaFf8RM5by6hjSpa+LAyL2C7p
+         SSy33spNbvURb2V/loA0SGOrGPM6ugXeZsCGwckE7x2/CyGQDkwtteedMsxWA4kp4dzO
+         DyG7AHxxmoHPWz08oimnVF4Cgiz9eUr6jQnIQGytsOqA9YFGeaPeTVQOQ1nxRF4botmV
+         faD8zqp/K6w864qYSXct3mc0H14El9qjEQ79UL/l038mI+3ntKelcBatlEXDR2CA7R7g
+         Mnjg==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b="H9/Nfb2h";
+       arc=pass (i=1);
+       spf=pass (google.com: domain of akarahprosper@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=akarahprosper@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <akarahprosper@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id af79cd13be357-921dc41ada1sor781361385a.15.2026.06.22.06.11.26
+        for <bayoleems@gmail.com>
+        (Google Transport Security);
+        Mon, 22 Jun 2026 06:11:26 -0700 (PDT)
+Received-SPF: pass (google.com: domain of akarahprosper@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b="H9/Nfb2h";
+       arc=pass (i=1);
+       spf=pass (google.com: domain of akarahprosper@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=akarahprosper@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1782133886; cv=none;
+        d=google.com; s=arc-20240605;
+        b=PNQZCCKvTq3rvoCiweEWmALXoo96DUSWl6v5MkbemyXUu8cXKQ5O0feA8/HJ84KknJ
+         GeLe/CC2eHNAfB4W0Wnfq2BZmIvFeJKn3IUu4oj+3t55Ry6haIEcHQN4EzuUDQfxZHtL
+         LbsLsFcnfmqn+I6UAojxHgKxpEnETFiuwwwp45GPii0mXUrSAjieN5K2n+SaUMZCwP7A
+         EbJhKUsB4xg8lw8hKMTgrvKvbFvixeo19zmVBANrs5l7JhIc+LjtYFlb6xv7FR8v5QPc
+         DT4I+ZdrTLNlPmzGqSi2YVgrn0xX6gKiZxLILzAuRfICaPB0Iz/DsTLeXo0buZ+HZJIa
+         PZxg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=T9gFv4K9smc57weusPF1DWkWA3jOzvkMNbQX0bdKvuE=;
+        fh=mPxirkRRNwdXsc7NhQrNr1Pw99tTZlYStJq8gXEnKyA=;
+        b=M67Yy/0Zebp2sHe7IxlAhM6FckLk9cHr0gjFRbyLg4pruYIq8bfvvz4A7G/sEH1oN/
+         5xQVQkQ7sMfzOXrrFgNI0ZHYFT5uO9z6S1Ly7yRQvNU90XbSl8KbPPcFXZFyWMsIL/xt
+         aNtKEVuV9KX5hjivwNonhLV3CYSNVvSk64nPU5cfOX+DgSd52I23DkbcEx5KlAlW9ZHM
+         KRfAJErai9HKTine3ELBk7uihU5qf1IZW0s+N7HewGgB1r+p1jJUNFWGEJiptt5sSTs+
+         GK4iCgUshmh2Q+pLI54AnZp3WSfFTmRvH4w3ayIDY7i7JlNeQxUifHUdSF40BqJBM+t/
+         2BHQ==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1782133886; x=1782738686; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=T9gFv4K9smc57weusPF1DWkWA3jOzvkMNbQX0bdKvuE=;
+        b=H9/Nfb2hp6TgtXUJDEqCJYcZYL8Xl4mwoJrRo7w73Ox0H6uLKM02LM/H9PKkMabNAw
+         OvOhuRYVZWWkPJuPEj6UQQqfvJ7hrxssE8qdJE0w760pa2VVrarnt8iwOGaOxHqf05JT
+         WoaGt093ubp1Pe075IaSAOyrHME4qcQykV7aS/ds4qHf2XQVjsN7a562JKmu1QRMRv36
+         CCRmR+FLb1Vl1ZLKVSOt/yOih8G1A2AFPE0+1mhSL1siKiSFOaoRaVHlfehSQoykc4dj
+         hqpq7b0cgsJzjD3Tx3+gZuzd2aCTLgO4WzWJi8r33ZQdMKTfaMrH7Os4C6hhh1SvBAoI
+         UUxQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1782133886; x=1782738686;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-gg:x-gm-message-state:from:to:cc:subject:date:message-id
+         :reply-to;
+        bh=T9gFv4K9smc57weusPF1DWkWA3jOzvkMNbQX0bdKvuE=;
+        b=MiHWQI28Rn0lNU7ZyJnbX9T8lqmpnDMPRCAIGt2TzMFwlHTeVpiPjtW89XecrlM/we
+         8YvbWZWOntbdTgo27sK9GaIK58zox0FtGnoypm+8Yr9BN2pzxDYNYv1Frf/3cD1xRkc4
+         BGoMCpmEsY6DXrMLDqcrrexlM8aBx5YbPqU0/W2+VB58GebeJq13t817bUHHuR668cUq
+         AIsxIQQBBiZo3YnowRYXzbnPsd82bYs0tbaxvtxAt2JclKJ+jd+nCEdCJxRqVHHp4Y7Y
+         q0QU7Mti+vFJ8ED0N+uZTX3TzbXKNH5BWv0N02Aywuf+0hUbQwTbA8DgMRcWs5VFQUcZ
+         +aPQ==
+X-Gm-Message-State: AOJu0YyzUha2HvtS66qrvYsBYP+mvvNCJ1yZDCA+Z7VgRaE47tf6HwKj
+	CAGK5wMQaxt3sekGhMa605VcmLhL5KJTe+fsjYcOqYjvIIS+JpEpYt2S2B+CFTQygDa4vTaSV90
+	s8ijalLxywEchu3vZDrNQzuriCiWxsqTRO24pqpg=
+X-Gm-Gg: AfdE7cngKRFUESTBY4rMxsmFQruPcb2WqhoD2h9Vqbjiqd6MMV+JfjKDelaxR5wUsOF
+	xESwNx6vI0PYdCwdVNOZNImBA8ncb/VK1p+VKKQBEVBudJ3v73BZD9PDWGa0qCmVWPB9q0D0CQ1
+	E5+h1CUKgMnMg3tG8kTkzqYUHjFV8h3MsDW/AiAP694hvxR53lKzfaQ1Gd9lhfngXIG97rjwo7p
+	8lAspKoPAuAvVgr5KMI790qyz/KbhQw8doQ0NYZK2Loq3mhM8ueAtk0fUE5L7+HrnK6L18VGQ==
+X-Received: by 2002:a05:620a:a511:b0:920:fa37:f249 with SMTP id
+ af79cd13be357-920fa37f4c2mr1745236885a.22.1782133885580; Mon, 22 Jun 2026
+ 06:11:25 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAACLcXMdonZaFHr8Zzm4-0LjdLtruQiXXQVT_q5DrwBH8rv_cA@mail.gmail.com>
+In-Reply-To: <CAACLcXMdonZaFHr8Zzm4-0LjdLtruQiXXQVT_q5DrwBH8rv_cA@mail.gmail.com>
+From: Akarah Prosper <akarahprosper@gmail.com>
+Date: Mon, 22 Jun 2026 14:11:14 +0100
+X-Gm-Features: AVVi8CdLNPT-X62aULch_DNn7eApSNb_tY3ClrAq1IrMWL-fZXpjwMoPkSzuOfk
+Message-ID: <CAF3RkVnfRYieNXw0xB2BNhtq6-X4kcXRT65_CL7nrXRMCASm3g@mail.gmail.com>
+Subject: Re: Urgent: Action required on your account
+To: Adebayo Saleem <bayoleems@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000003139d30654d76150"
+
+--0000000000003139d30654d76150
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Customer,
+
+Your account is suspended. Please verify your identity immediately to avoid
+data loss.
+I am in a confidential meeting. We need you to process an urgent payment
+via wire transfer.
+
+Click here to login: https://microsoft.com
+
+Thank you,
+The Management Team
+
+--0000000000003139d30654d76150
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Dear Customer,<br><br>Your account is suspended. Please ve=
+rify your identity immediately to avoid data loss.<br>I am in a confidentia=
+l meeting. We need you to process an urgent payment via wire=C2=A0<span sty=
+le=3D"background-color:transparent">transfer.</span><div><br>Click here to =
+login: <a href=3D"https://microsoft.com">https://microsoft.com</a><br><br>T=
+hank you,<br>The Management Team</div></div>
+
+--0000000000003139d30654d76150--

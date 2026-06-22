@@ -1,0 +1,7 @@
+rapidfuzz>=3.0            # fast Levenshtein for typosquatting 
+confusable-homoglyphs>=3.3 # mixed-script / homoglyph detection 
+tldextract>=5.0           # accurate registered-domain extraction 
+beautifulsoup4>=4.12      # robust HTML link parsing 
+python-whois>=0.9         # domain-age WHOIS lookups 
+pandas            # data manipulation and analysis
+streamlit>=1.32   # web UI for email triage
